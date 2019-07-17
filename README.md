@@ -28,7 +28,16 @@ This repository contains two different functions, each of which trains a convolu
 
 * The function `TrainCNN_quick` also achieves a high accuracy of 98.9%, and only takes about 15 minutes. 
 
-
+> Epoch 0 Last batch accuracy: 0.97 Test accuracy: 0.9767  
+> Epoch 1 Last batch accuracy: 0.99 Test accuracy: 0.9829  
+> Epoch 2 Last batch accuracy: 0.99 Test accuracy: 0.9832  
+> Epoch 3 Last batch accuracy: 0.97 Test accuracy: 0.9872  
+> Epoch 4 Last batch accuracy: 1.0 Test accuracy: 0.9844  
+> Epoch 5 Last batch accuracy: 1.0 Test accuracy: 0.9856  
+> Epoch 6 Last batch accuracy: 0.99 Test accuracy: 0.986  
+> Epoch 7 Last batch accuracy: 1.0 Test accuracy: 0.9887  
+> Epoch 8 Last batch accuracy: 1.0 Test accuracy: 0.9866  
+> Epoch 9 Last batch accuracy: 1.0 Test accuracy: 0.9878  
 
 
 Dependencies

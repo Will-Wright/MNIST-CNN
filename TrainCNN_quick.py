@@ -99,7 +99,7 @@ def TrainCNN_quick():
                 sess.run(training_op, feed_dict={X: X_batch, y: y_batch})
             acc_batch = accuracy.eval(feed_dict={X: X_batch, y: y_batch})
             acc_test = accuracy.eval(feed_dict={X: X_test, y: y_test})
-            print(epoch, "Last batch accuracy:", acc_batch, "Test accuracy:", acc_test)
+            print("Epoch", epoch, "Last batch accuracy:", acc_batch, "Test accuracy:", acc_test)
 
             save_path = saver.save(sess, "./my_mnist_model")
 
