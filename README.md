@@ -7,7 +7,7 @@ Description
 
 This repository contains two different functions, each of which trains a convolutional neural network on the [MNIST dataset](http://yann.lecun.com/exdb/mnist/).
 
-* The function `TrainCNN` achieves a nearly state-of-the-art accuracy of 99.2%.  This CNN takes about an hour to train on a modern laptop (e.g., my MacBook Air with a 1.7 GHz Intel Core i5 processor and 4 GB of memory).  Import and run `TrainCNN` to generate the following results:
+* The function `TrainCNN` achieves a nearly state-of-the-art accuracy of 99.2%.  This CNN takes about 1.5 hours to train on a modern laptop (e.g., my MacBook Air with a 1.7 GHz Intel Core i5 processor and 4 GB of memory).  Import and run `TrainCNN` to generate the following results:
 
 > Epoch 0, last batch accuracy: 100.0000%, valid. accuracy: 98.1800%, valid. best loss: 0.055883  
 > Epoch 1, last batch accuracy: 98.0000%, valid. accuracy: 98.8400%, valid. best loss: 0.047431  
@@ -26,7 +26,7 @@ This repository contains two different functions, each of which trains a convolu
 > Early stopping!  
 > Final accuracy on test set: 0.992
 
-* The function `TrainCNN_quick` also achieves a high accuracy of 98.9%, and only takes about 15 minutes. 
+* The function `TrainCNN_quick` also achieves a high accuracy of 98.9%, and only takes about 30 minutes. 
 
 > Epoch 0 Last batch accuracy: 0.97 Test accuracy: 0.9767  
 > Epoch 1 Last batch accuracy: 0.99 Test accuracy: 0.9829  
