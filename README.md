@@ -11,11 +11,11 @@ Simply import and run `TrainCNN` to generate the following results:
 > Epoch 1, last batch accuracy: 98.0000%, valid. accuracy: 98.8400%, valid. best loss: 0.047431  
 > Epoch 2, last batch accuracy: 100.0000%, valid. accuracy: 98.6200%, valid. best loss: 0.040835  
 > Epoch 3, last batch accuracy: 100.0000%, valid. accuracy: 98.8600%, valid. best loss: 0.032635  
-> XXX
+> Epoch 4, last batch accuracy: 100.0000%, valid. accuracy: 98.7000%, valid. best loss: 0.032635  
 
 
 
-
+Note that this CNN takes about an hour to train on a modern laptop.
 
 
 
