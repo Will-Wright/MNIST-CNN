@@ -15,7 +15,7 @@ Simply import and run `TrainCNN` to generate the following results:
 
 
 
-Note that this CNN takes about an hour to train on a modern laptop.
+Note that this CNN takes about an hour to train on a modern laptop (e.g., my MacBook Air with a 1.7 GHz Intel Core i5 processor and 4 GB of memory).
 
 
 
