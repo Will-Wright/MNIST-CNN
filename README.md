@@ -1,7 +1,7 @@
 Description
 -----------
 
-The function `TrainCNN` uses `tensorflow` to train a convolutional neural network on the MNIST database.
+The function `TrainCNN` uses `tensorflow` to train a convolutional neural network on the [MNIST dataset](http://yann.lecun.com/exdb/mnist/).
 
 This CNN achieves a nearly state-of-the-art accuracy of 99.2%.
 
