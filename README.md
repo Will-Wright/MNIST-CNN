@@ -1,1 +1,5 @@
-# MNIST-CNN
+Description
+-----------
+
+The function `TrainCNN` 
+
