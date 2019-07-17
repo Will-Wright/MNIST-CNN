@@ -21,6 +21,10 @@ This repository contains two different functions, each of which trains a convolu
 > Epoch 9, last batch accuracy: 100.0000%, valid. accuracy: 98.9400%, valid. best loss: 0.032635  
 > Epoch 10, last batch accuracy: 100.0000%, valid. accuracy: 99.1800%, valid. best loss: 0.032635  
 > Epoch 11, last batch accuracy: 100.0000%, valid. accuracy: 98.9600%, valid. best loss: 0.032635  
+> Epoch 12, last batch accuracy: 100.0000%, valid. accuracy: 98.7400%, valid. best loss: 0.032635  
+> Epoch 13, last batch accuracy: 100.0000%, valid. accuracy: 99.1600%, valid. best loss: 0.032635  
+> Early stopping!  
+> Final accuracy on test set: 0.992
 
 * The function `TrainCNN_quick` also achieves a high accuracy of 98.9%, and only takes about 15 minutes. 
 
