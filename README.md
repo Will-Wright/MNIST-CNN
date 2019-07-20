@@ -5,7 +5,9 @@
 Description
 -----------
 
-This repository contains two different functions, each of which trains a convolutional neural network on the [MNIST dataset](http://yann.lecun.com/exdb/mnist/).
+This repository contains implementations of two convolutional neural networks (CNNs) for the [MNIST dataset](http://yann.lecun.com/exdb/mnist/) using TensorFlow.
+
+These two CNNs are based on chapter 13 in [Hands-On Machine Learning with Scikit-Learn and TensorFlow](https://www.oreilly.com/library/view/hands-on-machine-learning/9781491962282/) and the [accompanying software](https://github.com/ageron/handson-ml)
 
 * The function `TrainCNN` achieves a nearly state-of-the-art accuracy of 99.2%.  This CNN takes about 1.5 hours to train on a modern laptop (e.g., my MacBook Air with a 1.7 GHz Intel Core i5 processor and 4 GB of memory).  Import and run `TrainCNN` to generate the following results:
 
