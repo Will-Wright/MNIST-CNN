@@ -19,8 +19,8 @@ This CNN achieves an accuracy of `99.2%`.
 
 
 <p align="center">
-<img src="cache/model_CIFAR.png" height="600">
-<img src="cache/model_MNIST.png" height="400">
+<img src="cache/model_CIFAR.png" height="800">
+<img src="cache/model_MNIST.png" height="800">
 </p>
 <p align="center">
 Original image
