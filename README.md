@@ -4,16 +4,26 @@ Description
 This repository contains implementations of two convolutional neural networks (CNNs), 
 one for the [CIFAR-10 dataset](https://www.cs.toronto.edu/~kriz/cifar.html) 
 and one for the [MNIST dataset](http://yann.lecun.com/exdb/mnist/).
-
-
-
-These two CNNs are based on chapter 13 in [Hands-On Machine Learning with Scikit-Learn and TensorFlow](https://www.oreilly.com/library/view/hands-on-machine-learning/9781491962282/) and the author's [accompanying software](https://github.com/ageron/handson-ml).
+Both CNNs use the Keras API with TensorFlow backend.
 
 Note that TensorFlow versions >= 2.0 will throw deprecated software warnings.
 
-* The function `` achieves a nearly state-of-the-art accuracy of 99.2%.  This CNN takes about 1.5 hours to train on a modern laptop (e.g., my MacBook Air with a 1.7 GHz Intel Core i5 processor and 4 GB of memory).  Import and run `TrainCNN` to generate the following results:
+The CIFAR-10 CNN includes 6 convolution layers and a flatten layer 
+and is based on [this architecture](https://appliedmachinelearning.blog/2018/03/24/achieving-90-accuracy-in-object-recognition-task-on-cifar-10-dataset-with-keras-convolutional-neural-networks/) by Abhijeet Kumar.
+This CNN achieves an accuracy of `89%`.
 
-* The function `TrainCNN_quick` also achieves a high accuracy of 98.9%, and only takes about 30 minutes. 
+The MNIST CNN includes 2 convolution layers and a flatten layer 
+and is based on [this architecture](https://github.com/keras-team/keras/blob/master/examples/mnist_cnn.py) from the Keras team.
+This CNN achieves an accuracy of `99.2%`.
+
+Demo Tutorial
+-------------
+
+* To run the demo, call the function `RunDemo.main(model_name=model_name, use_cached=use_cached)`. 
+
+* `model_name` can take values `CIFAR`, `MNIST`, or `[]` (default).
+
+* `use_cached` is boolean (default to `True`).
 
 
 Dependencies
