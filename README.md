@@ -4,8 +4,8 @@ Description
 This repository contains implementations of two convolutional neural networks (CNNs), 
 one for the [CIFAR-10 dataset](https://www.cs.toronto.edu/~kriz/cifar.html) 
 and one for the [MNIST dataset](http://yann.lecun.com/exdb/mnist/).
-Both CNNs use the Keras API with TensorFlow backend.
-
+Both CNNs use the Keras API.  
+Cached results are computed with TensorFlow backend. 
 Note that TensorFlow versions >= 2.0 will throw deprecated software warnings.
 
 The CIFAR-10 CNN includes 6 convolution layers and a flatten layer 
@@ -23,12 +23,13 @@ Demo Tutorial
 
 * `model_name` can take values `CIFAR`, `MNIST`, or `[]` (default).
 
-* `use_cached` is boolean (default to `True`).
+* `use_cached` is boolean (default `True`).
 
 
 Dependencies
 ------------
 
-* `tensorflow`
+* `keras`
+* `TensorFlow`, `CNTK`, or `Theano`
 * `numpy`
 
