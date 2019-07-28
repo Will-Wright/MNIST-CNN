@@ -28,10 +28,10 @@ CNN Architectures
  </tr>
  <tr>
     <td>
-      <img src="cache/model_CIFAR.png" height="1200">
+      <img src="cache/model_CIFAR.png" height="1500">
     </td>
     <td>
-      <img src="cache/model_MNIST.png" height="400">
+      <img src="cache/model_MNIST.png" height="500">
     </td>
  </tr>
 </table>
