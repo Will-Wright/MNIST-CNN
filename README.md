@@ -16,6 +16,18 @@ The MNIST CNN includes 2 convolution layers and a flatten layer
 and is based on [this architecture](https://github.com/keras-team/keras/blob/master/examples/mnist_cnn.py) from the Keras team.
 This CNN achieves an accuracy of `99.2%`.
 
+
+
+<p align="center">
+<img src="cache/model_CIFAR.png">
+</p>
+<p align="center">
+Original image
+</p>
+
+
+
+
 Demo Tutorial
 -------------
 
