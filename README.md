@@ -18,14 +18,7 @@ This CNN achieves an accuracy of `99.2%`.
 
 
 
-<p align="center">
-<img src="cache/model_CIFAR.png">
-</p>
-<p align="center">
-Original image
-</p>
-
-
+![](.cache/model_CIFAR.png =250x)
 
 
 Demo Tutorial
