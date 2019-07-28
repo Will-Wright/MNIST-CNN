@@ -20,16 +20,21 @@ This CNN achieves an accuracy of `99.2%`.
 CNN Architectures
 -----------------
 
-<p align="center">
-<figure class="image">
-   <img src="cache/model_CIFAR.png" height="800">
-   <figcaption>{{xxx}}</figcaption>
-</figure>
-<figure class="image">
-   <img src="cache/model_MNIST.png" height="800">
-   <figcaption>{{yyy}}</figcaption>
-</figure>
-</p>
+<table border="0">
+ <tr>
+    <td><b style="font-size:30px">Title</b></td>
+    <td><b style="font-size:30px">Title 2</b></td>
+ </tr>
+ <tr>
+    <td>
+      <img src="cache/model_CIFAR.png" height="800">
+    </td>
+    <td>
+      <img src="cache/model_MNIST.png" height="800">
+    </td>
+ </tr>
+</table>
+
 
 
 Demo Tutorial
