@@ -17,14 +17,20 @@ and is based on [this architecture](https://github.com/keras-team/keras/blob/mas
 This CNN achieves an accuracy of `99.2%`.
 
 
+CNN Architectures
+-----------------
 
 <p align="center">
-<img src="cache/model_CIFAR.png" height="800">
-<img src="cache/model_MNIST.png" height="800">
+<figure class="image">
+   <img src="cache/model_CIFAR.png" height="800">
+   <figcaption>{{xxx}}</figcaption>
+</figure>
+<figure class="image">
+   <img src="cache/model_MNIST.png" height="800">
+   <figcaption>{{yyy}}</figcaption>
+</figure>
 </p>
-<p align="center">
-Original image
-</p>
+
 
 Demo Tutorial
 -------------
