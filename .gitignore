@@ -1,4 +1,6 @@
 .ipynb_checkpoints
+.gitignore
+TensorFlow\ Test.ipynb
 dev_script.ipynb
 checkpoint
 __pycache__/
