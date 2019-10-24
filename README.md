@@ -56,7 +56,6 @@ Dependencies
 ------------
 
 * `torch`, `torchvision`, `torchsummary`
+* `graphviz`, `torchviz` 
 * `keras`
 * `TensorFlow`, `CNTK`, or `Theano`
-* `numpy`
-* `graphviz`, `torchviz`

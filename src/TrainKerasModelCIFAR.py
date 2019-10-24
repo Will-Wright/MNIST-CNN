@@ -12,7 +12,7 @@ def lr_schedule(epoch):
 
 def TrainKerasModelCIFAR(model, dataset):
 
-    print("Training CIFAR-10 model.")
+    print("Training Keras CIFAR-10 model.")
     batch_size = 64
     epochs = 125
     opt_rms = keras.optimizers.rmsprop(lr=0.001,decay=1e-6)
@@ -32,7 +32,7 @@ def TrainKerasModelCIFAR(model, dataset):
                         verbose=1,validation_data=(dataset['x_test'],\
                         dataset['y_test']),\
                         callbacks=[LearningRateScheduler(lr_schedule)])
-    print("CIFAR-10 model fit complete.")
+    print("Keras CIFAR-10 model fit complete.")
 
     # Save to disk, serialize model to JSON
     model_json = model.to_json()
@@ -40,7 +40,7 @@ def TrainKerasModelCIFAR(model, dataset):
         json_file.write(model_json)
     # Serialize weights to HDF5
     model.save_weights('cache/model_Keras_CIFAR.h5')
-    print("CIFAR-10 model saved to disk.")
+    print("Keras CIFAR-10 model saved to disk.")
 
     # Evaluate results
     print("Evaluating model.")

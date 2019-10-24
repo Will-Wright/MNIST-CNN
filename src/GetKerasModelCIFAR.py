@@ -19,7 +19,7 @@ def GetKerasModelCIFAR(use_cached):
     # Load fitted model
     if use_cached and os.path.isfile('cache/model_Keras_CIFAR.json') and os.path.isfile('cache/model_Keras_CIFAR.h5'):
 
-        print("Loading previously trained CIFAR-10 model.")
+        print("Loading previously trained Keras CIFAR-10 model.")
         is_trained = True
 
         # Load json and create model
@@ -31,7 +31,7 @@ def GetKerasModelCIFAR(use_cached):
         # Load weights into new model
         model.load_weights("cache/model_Keras_CIFAR.h5")
 
-        print("CIFAR-10 model loaded from disk.")
+        print("Keras CIFAR-10 model loaded from disk.")
         model.summary()
 
         # Evaluate results
@@ -56,7 +56,7 @@ def GetKerasModelCIFAR(use_cached):
         print('\nTest result: %.3f loss: %.3f' % (scores[1]*100,scores[0]))
 
     else:
-        print("Getting CIFAR-10 model.")
+        print("Getting Keras CIFAR-10 model.")
         is_trained = False
         (x_train, y_train), (x_test, y_test) = cifar10.load_data()
         x_train = x_train.astype('float32')

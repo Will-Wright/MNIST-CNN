@@ -15,7 +15,7 @@ def GetKerasModelMNIST(use_cached):
 
     # Load fitted model
     if use_cached and os.path.isfile('cache/model_Keras_MNIST.json') and os.path.isfile('cache/model_Keras_MNIST.h5'):
-        print("Loading previously trained MNIST model.")
+        print("Loading previously trained Keras MNIST model.")
         is_trained = True
 
         # Load json and create model
@@ -27,7 +27,7 @@ def GetKerasModelMNIST(use_cached):
         # Load weights into new model
         model.load_weights("cache/model_Keras_MNIST.h5")
 
-        print("MNIST model loaded from disk.")
+        print("Keras MNIST model loaded from disk.")
         model.summary()
 
         # Evaluate results
@@ -55,7 +55,7 @@ def GetKerasModelMNIST(use_cached):
         print('\nTest result: %.3f loss: %.3f' % (scores[1]*100,scores[0]))
 
     else:
-        print("Getting MNIST model.")
+        print("Getting Keras MNIST model.")
         is_trained = False
         (x_train, y_train), (x_test, y_test) = mnist.load_data()
         num_classes = 10

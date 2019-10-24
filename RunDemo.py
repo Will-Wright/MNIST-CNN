@@ -23,17 +23,21 @@ def main(model_name=[], use_cached=True):
         os.mkdir('cache')
 
     if run_CIFAR:
-        model_CIFAR, dataset_CIFAR, is_trained_CIFAR = GetKerasModelCIFAR(use_cached)
+        model_Keras_CIFAR, dataset_CIFAR, is_trained_CIFAR \
+            = GetKerasModelCIFAR(use_cached)
 
         if not is_trained_CIFAR:
-            PlotKerasModelArchitecture(model_CIFAR, 'cache/model_Keras_CIFAR.png')
-            TrainKerasModelCIFAR(model_CIFAR, dataset_CIFAR)
+            PlotKerasModelArchitecture(model_Keras_CIFAR, \
+                                       'cache/model_Keras_CIFAR.png')
+            TrainKerasModelCIFAR(model_Keras_CIFAR, dataset_CIFAR)
 
     if run_MNIST:
-        model_MNIST, dataset_MNIST, is_trained_MNIST = GetKerasModelMNIST(use_cached)
+        model_Keras_MNIST, dataset_MNIST, is_trained_MNIST \
+            = GetKerasModelMNIST(use_cached)
 
         if not is_trained_MNIST:
-            PlotKerasModelArchitecture(model_MNIST, 'cache/model_Keras_MNIST.png')
-            TrainKerasModelMNIST(model_MNIST, dataset_MNIST)
+            PlotKerasModelArchitecture(model_Keras_MNIST, \
+                                       'cache/model_Keras_MNIST.png')
+            TrainKerasModelMNIST(model_Keras_MNIST, dataset_MNIST)
 
     return

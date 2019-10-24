@@ -2,7 +2,7 @@ import keras
 
 def TrainKerasModelMNIST(model, dataset):
 
-    print("Training MNIST model.")
+    print("Training Keras MNIST model.")
     batch_size = 128
     epochs = 24
 
@@ -17,7 +17,7 @@ def TrainKerasModelMNIST(model, dataset):
     model.fit(dataset['x_train'], dataset['y_train'],\
               batch_size=batch_size, epochs=epochs, verbose=1,\
               validation_data=(dataset['x_test'], dataset['y_test']))
-    print("MNIST model fit complete.")
+    print("Keras MNIST model fit complete.")
 
     # Save to disk, serialize model to JSON
     model_json = model.to_json()
@@ -25,7 +25,7 @@ def TrainKerasModelMNIST(model, dataset):
         json_file.write(model_json)
     # Serialize weights to HDF5
     model.save_weights('cache/model_Keras_MNIST.h5')
-    print("MNIST model saved to disk.")
+    print("Keras MNIST model saved to disk.")
 
     # Evaluate results
     print("Evaluating model.")
