@@ -14,22 +14,22 @@ import numpy as np
 import os.path
 
 
-def GetModelCIFAR(use_cached):
+def GetKerasModelCIFAR(use_cached):
 
     # Load fitted model
-    if use_cached and os.path.isfile('cache/model_CIFAR.json') and os.path.isfile('cache/model_CIFAR.h5'):
+    if use_cached and os.path.isfile('cache/model_Keras_CIFAR.json') and os.path.isfile('cache/model_Keras_CIFAR.h5'):
 
         print("Loading previously trained CIFAR-10 model.")
         is_trained = True
 
         # Load json and create model
-        json_file = open('cache/model_CIFAR.json', 'r')
+        json_file = open('cache/model_Keras_CIFAR.json', 'r')
         loaded_model_json = json_file.read()
         json_file.close()
         model = model_from_json(loaded_model_json)
 
         # Load weights into new model
-        model.load_weights("cache/model_CIFAR.h5")
+        model.load_weights("cache/model_Keras_CIFAR.h5")
 
         print("CIFAR-10 model loaded from disk.")
         model.summary()

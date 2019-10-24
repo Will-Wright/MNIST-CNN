@@ -2,11 +2,11 @@ import os, sys
 
 sys.path.append(os.getcwd() + "/src")
 
-from GetModelCIFAR import GetModelCIFAR
-from TrainModelCIFAR import TrainModelCIFAR
-from GetModelMNIST import GetModelMNIST
-from TrainModelMNIST import TrainModelMNIST
-from PlotModelArchitecture import PlotModelArchitecture
+from GetKerasModelCIFAR import GetKerasModelCIFAR
+from TrainKerasModelCIFAR import TrainKerasModelCIFAR
+from GetKerasModelMNIST import GetKerasModelMNIST
+from TrainKerasModelMNIST import TrainKerasModelMNIST
+from PlotKerasModelArchitecture import PlotKerasModelArchitecture
 
 def main(model_name=[], use_cached=True):
     if model_name == 'MNIST':
@@ -23,17 +23,17 @@ def main(model_name=[], use_cached=True):
         os.mkdir('cache')
 
     if run_CIFAR:
-        model_CIFAR, dataset_CIFAR, is_trained_CIFAR = GetModelCIFAR(use_cached)
+        model_CIFAR, dataset_CIFAR, is_trained_CIFAR = GetKerasModelCIFAR(use_cached)
 
         if not is_trained_CIFAR:
-            PlotModelArchitecture(model_CIFAR, 'cache/model_CIFAR.png')
-            TrainModelCIFAR(model_CIFAR, dataset_CIFAR)
+            PlotKerasModelArchitecture(model_CIFAR, 'cache/model_Keras_CIFAR.png')
+            TrainKerasModelCIFAR(model_CIFAR, dataset_CIFAR)
 
     if run_MNIST:
-        model_MNIST, dataset_MNIST, is_trained_MNIST = GetModelMNIST(use_cached)
+        model_MNIST, dataset_MNIST, is_trained_MNIST = GetKerasModelMNIST(use_cached)
 
         if not is_trained_MNIST:
-            PlotModelArchitecture(model_MNIST, 'cache/model_MNIST.png')
-            TrainModelMNIST(model_MNIST, dataset_MNIST)
+            PlotKerasModelArchitecture(model_MNIST, 'cache/model_Keras_MNIST.png')
+            TrainKerasModelMNIST(model_MNIST, dataset_MNIST)
 
     return

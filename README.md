@@ -23,15 +23,19 @@ CNN Architectures
 <p align="center">
 <table border="0">
  <tr>
+    <td><b style="font-size:30px">MNIST with PyTorch</b></td>
     <td><b style="font-size:30px">CIFAR-10</b></td>
     <td><b style="font-size:30px">MNIST</b></td>
  </tr>
  <tr>
     <td>
-      <img src="cache/model_CIFAR.png" height="1500">
+      <img src="cache/model_PyTorch_MNIST.png", height="600">
     </td>
     <td>
-      <img src="cache/model_MNIST.png" height="500">
+      <img src="cache/model_Keras_CIFAaR.png" height="1500">
+    </td>
+    <td>
+      <img src="cache/model_Keras_MNIST.png" height="500">
     </td>
  </tr>
 </table>
@@ -51,7 +55,8 @@ Demo Tutorial
 Dependencies
 ------------
 
+* `torch`, `torchvision`, `torchsummary`
 * `keras`
 * `TensorFlow`, `CNTK`, or `Theano`
 * `numpy`
-
+* `graphviz`, `torchviz`

@@ -11,21 +11,21 @@ from keras.models import model_from_json
 import os.path
 
 
-def GetModelMNIST(use_cached):
+def GetKerasModelMNIST(use_cached):
 
     # Load fitted model
-    if use_cached and os.path.isfile('cache/model_MNIST.json') and os.path.isfile('cache/model_MNIST.h5'):
+    if use_cached and os.path.isfile('cache/model_Keras_MNIST.json') and os.path.isfile('cache/model_Keras_MNIST.h5'):
         print("Loading previously trained MNIST model.")
         is_trained = True
 
         # Load json and create model
-        json_file = open('cache/model_MNIST.json', 'r')
+        json_file = open('cache/model_Keras_MNIST.json', 'r')
         loaded_model_json = json_file.read()
         json_file.close()
         model = model_from_json(loaded_model_json)
 
         # Load weights into new model
-        model.load_weights("cache/model_MNIST.h5")
+        model.load_weights("cache/model_Keras_MNIST.h5")
 
         print("MNIST model loaded from disk.")
         model.summary()

@@ -1,6 +1,6 @@
 from keras.utils import plot_model
 
-def PlotModelArchitecture(model, to_file):
+def PlotKerasModelArchitecture(model, to_file):
     show_shapes = True
     show_layer_names = True
 

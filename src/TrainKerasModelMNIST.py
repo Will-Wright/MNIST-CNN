@@ -1,6 +1,6 @@
 import keras
 
-def TrainModelMNIST(model, dataset):
+def TrainKerasModelMNIST(model, dataset):
 
     print("Training MNIST model.")
     batch_size = 128
@@ -21,10 +21,10 @@ def TrainModelMNIST(model, dataset):
 
     # Save to disk, serialize model to JSON
     model_json = model.to_json()
-    with open('cache/model_MNIST.json', 'w') as json_file:
+    with open('cache/model_Keras_MNIST.json', 'w') as json_file:
         json_file.write(model_json)
     # Serialize weights to HDF5
-    model.save_weights('cache/model_MNIST.h5')
+    model.save_weights('cache/model_Keras_MNIST.h5')
     print("MNIST model saved to disk.")
 
     # Evaluate results

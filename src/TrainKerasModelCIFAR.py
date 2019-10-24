@@ -10,7 +10,7 @@ def lr_schedule(epoch):
     return lrate
 
 
-def TrainModelCIFAR(model, dataset):
+def TrainKerasModelCIFAR(model, dataset):
 
     print("Training CIFAR-10 model.")
     batch_size = 64
@@ -36,10 +36,10 @@ def TrainModelCIFAR(model, dataset):
 
     # Save to disk, serialize model to JSON
     model_json = model.to_json()
-    with open('cache/model_CIFAR.json', 'w') as json_file:
+    with open('cache/model_Keras_CIFAR.json', 'w') as json_file:
         json_file.write(model_json)
     # Serialize weights to HDF5
-    model.save_weights('cache/model_CIFAR.h5')
+    model.save_weights('cache/model_Keras_CIFAR.h5')
     print("CIFAR-10 model saved to disk.")
 
     # Evaluate results
