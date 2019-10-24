@@ -32,7 +32,7 @@ CNN Architectures
       <img src="cache/model_PyTorch_MNIST.png", height="600">
     </td>
     <td>
-      <img src="cache/model_Keras_CIFAaR.png" height="1500">
+      <img src="cache/model_Keras_CIFAR.png" height="1500">
     </td>
     <td>
       <img src="cache/model_Keras_MNIST.png" height="500">
