@@ -24,18 +24,18 @@ CNN Architectures
 <table border="0">
  <tr>
     <td><b style="font-size:30px">MNIST with PyTorch</b></td>
-    <td><b style="font-size:30px">CIFAR-10</b></td>
-    <td><b style="font-size:30px">MNIST</b></td>
+    <td><b style="font-size:30px">MNIST with Keras</b></td>
+    <td><b style="font-size:30px">CIFAR-10 with Keras</b></td>
  </tr>
  <tr>
     <td>
       <img src="cache/model_PyTorch_MNIST.png", height="600">
     </td>
     <td>
-      <img src="cache/model_Keras_CIFAR.png" height="1500">
+      <img src="cache/model_Keras_MNIST.png" height="500">
     </td>
     <td>
-      <img src="cache/model_Keras_MNIST.png" height="500">
+      <img src="cache/model_Keras_CIFAR.png" height="1500">
     </td>
  </tr>
 </table>
