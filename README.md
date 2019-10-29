@@ -9,8 +9,9 @@ Note that TensorFlow versions >= 2.0 will throw deprecated software warnings.
 
 The PyTorch MNIST CNN includes 2 convolutional layers, 
 a linear layer with ReLU activation, and a linear layer with log_softmax.
-[This architecture](https://github.com/pytorch/examples/tree/master/mnist) 
-is a common PyTorch example and achieves an accuracy of `99.0%`.
+The model is based on 
+[this architecture](https://github.com/pytorch/examples/tree/master/mnist) 
+and achieves an accuracy of `99.0%`.
 
 The Keras MNIST CNN includes 2 convolution layers and a flatten layer 
 and is based on [this architecture](https://github.com/keras-team/keras/blob/master/examples/mnist_cnn.py) from the Keras team.
