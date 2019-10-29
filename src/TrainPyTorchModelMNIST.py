@@ -29,7 +29,7 @@ class Net(nn.Module):
         x = F.relu(self.fc1(x))
         x = self.fc2(x)
         return F.log_softmax(x, dim=1)
-    
+
 def train(args, model, device, train_loader, optimizer, epoch):
     model.train()
     for batch_idx, (data, target) in enumerate(train_loader):
@@ -71,7 +71,7 @@ def TrainPyTorchModelMNIST(use_cached):
                         help='input batch size for training (default: 64)')
     parser.add_argument('--test-batch-size', type=int, default=1000, metavar='N',
                         help='input batch size for testing (default: 1000)')
-    parser.add_argument('--epochs', type=int, default=1, metavar='N',
+    parser.add_argument('--epochs', type=int, default=10, metavar='N',
                         help='number of epochs to train (default: 10)')
     parser.add_argument('--lr', type=float, default=0.01, metavar='LR',
                         help='learning rate (default: 0.01)')
@@ -109,12 +109,9 @@ def TrainPyTorchModelMNIST(use_cached):
                        ])),
         batch_size=args.test_batch_size, shuffle=True, **kwargs)
 
-
     model = Net().to(device)
     optimizer = optim.SGD(model.parameters(), lr=args.lr, momentum=args.momentum)
 
-
-    
     # Load fitted model
     if use_cached and os.path.isfile("cache/model_PyTorch_MNIST.pt"):
 
@@ -122,35 +119,29 @@ def TrainPyTorchModelMNIST(use_cached):
         is_trained = True
 
         model.load_state_dict(torch.load("cache/model_PyTorch_MNIST.pt"))
-
-
-        #print('\nTest result: %.3f loss: %.3f' % (scores[1]*100,scores[0]))
+        test(args, model, device, test_loader)
 
     # Train model
     else:
-        print("Getting PyTorch MNIST model.")
+        print("Building and training PyTorch MNIST model.")
         is_trained = False
-        
+
         for epoch in range(1, args.epochs + 1):
             train(args, model, device, train_loader, optimizer, epoch)
             test(args, model, device, test_loader)
 
         if (args.save_model):
             torch.save(model.state_dict(),"cache/model_PyTorch_MNIST.pt")
-            
+
         # Plots graph of network and saves png image
         inputs = torch.randn(1, 1, 28, 28)
         y = model(Variable(inputs))
         g = make_dot(y)
         g.format = 'png'
         g.render('cache/model_PyTorch_MNIST', view=False)
-        
+
     # Prints network architecture
     print(summary(model, (1, 28, 28)))
 
     return
-
-
-
-
 
