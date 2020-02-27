@@ -14,7 +14,7 @@ The model is based on
 and achieves an accuracy of `99.0%`.
 
 The Keras MNIST CNN includes 2 convolution layers and a flatten layer 
-and is based on [this architecture](https://github.com/keras-team/keras/blob/master/examples/mnist_cnn.py) from the Keras team.
+and is based on [this architecture](https://github.com/keras-team/keras/blob/master/examples/mnist_cnn.py) from the Keras dev team.
 This model achieves an accuracy of `99.2%`.
 
 The Keras CIFAR-10 CNN includes 6 convolution layers and a flatten layer 
